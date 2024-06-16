@@ -1,3 +1,4 @@
+# cat de_prod.py
 import streamlit as st
 from langchain_community.chat_models import ChatOllama
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
@@ -5,10 +6,11 @@ from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.chat_history import BaseChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.messages import HumanMessage
+from langchain.globals import set_llm_cache
+from langchain_community.cache import InMemoryCache
 
-# Initialize global variables
 model = ChatOllama(model="llama3")
-
+set_llm_cache(InMemoryCache())
 # Function to create system template
 def create_system_template():
     SYSTEM_TEMPLATE = """
@@ -51,14 +53,16 @@ def main():
 
     # Input box for user message
     user_input = st.text_input("You:", "")
-
+    response_container = st.empty()
     # Button to send the message and get the response
     if st.button("Send Message"):
-        response = with_message_history.invoke(
+        response_text = ""
+        for response in with_message_history.stream(
             [HumanMessage(content=user_input)],
             config=config,
-        )
-        st.text_area("Marco the DE Expert:", value=response.content, height=150)
+        ):
+            response_text += response.content
+            response_container.write(f"Marco the DE Expert:\n\n{response_text}")
 
 # Run the Streamlit app
 if __name__ == "__main__":
