@@ -20,7 +20,7 @@ print("Number of document splits: ", len(doc_splits))
 vectorstore = Chroma.from_documents(
     documents=doc_splits,
     collection_name="rag-chroma",
-    embedding=OllamaEmbeddings(),
+    embedding=OllamaEmbeddings(model="llama3"),
 )
 retriever = vectorstore.as_retriever()
 print(retriever)
