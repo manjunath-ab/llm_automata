@@ -21,6 +21,7 @@ print("Number of pages found: ", len(urls))
 print("loading pages...")
 docs = WebBaseLoader(urls)
 docs.requests_per_second = 5
+docs.continue_on_failure=True
 
 docs_list =  docs.aload()
 
