@@ -1,5 +1,6 @@
 from langchain_community.document_loaders import WebBaseLoader
 #from langchain_community.vectorstores import Chroma
+from langchain_pinecone import PineconeVectorStore
 from langchain_community.embeddings import OllamaEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from website_pages_retreiver import getPagesFromSitemap
@@ -24,11 +25,11 @@ text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
 doc_splits = text_splitter.split_documents(docs_list)
 print("Number of document splits: ", len(doc_splits))
 
+embeddings= OllamaEmbeddings(model="llama3")
+
 # Add to vectorDB
-vectorstore = Chroma.from_documents(
-    documents=doc_splits,
-    collection_name="snowflake-docs-rag",
-    embedding=OllamaEmbeddings(model="llama3"),
-)
+index_name = "snowflake-docs-rag"
+
+vectorstore = PineconeVectorStore.from_documents(docs, embeddings, index_name=index_name)
 retriever = vectorstore.as_retriever()
 print(retriever)
