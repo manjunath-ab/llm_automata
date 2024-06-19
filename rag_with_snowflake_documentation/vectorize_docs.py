@@ -20,7 +20,7 @@ load_dotenv(dotenv_path=dotenv_path)
 urls = list(getPagesFromSitemap("https://docs.snowflake.com/en/"))
 print("Number of pages found: ", len(urls))
 print("loading pages...")
-docs = WebBaseLoader(urls[:200])
+docs = WebBaseLoader(urls[:2200])
 docs.requests_per_second = 5
 docs.continue_on_failure=True
 
@@ -33,6 +33,7 @@ embeddings= OllamaEmbeddings(model="nomic-embed-text")
 
 batch_size = 10
 num_docs = len(docs_list)
+print(f"Total number of batches is: {num_docs//batch_size}")
 text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
     chunk_size=1000, chunk_overlap=50
   )
