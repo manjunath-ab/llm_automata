@@ -1,8 +1,16 @@
 from langchain_community.document_loaders import WebBaseLoader
-from langchain_community.vectorstores import Chroma
+#from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import OllamaEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from website_pages_retreiver import getPagesFromSitemap
+import os
+from pathlib import Path
+from dotenv import load_dotenv
+
+
+dotenv_path = Path('~/home/.env')
+load_dotenv(dotenv_path=dotenv_path)
+
 
 urls = list(getPagesFromSitemap("https://docs.snowflake.com/en/"))
 print("Number of pages found: ", len(urls))
