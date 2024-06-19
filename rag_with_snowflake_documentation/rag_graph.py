@@ -43,7 +43,7 @@ def main():
     #retrieval grader:
     grader = retrieval_grader()
     question = "Explain Snowflake Architecture"
-    docs = retriever.get_relevant_documents(question)
+    docs = retriever.invoke(question)
     doc_txt = docs[1].page_content
     print(grader.invoke({"question": question, "document": doc_txt}))
 
