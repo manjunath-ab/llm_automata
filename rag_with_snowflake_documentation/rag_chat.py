@@ -12,5 +12,8 @@ embeddings= OllamaEmbeddings(model="nomic-embed-text")
 
 vectorstore = PineconeVectorStore(index_name="snowflake-docs-rag", embedding=embeddings)
 query = "Explain Snowflake Architecture"
-docs = vectorstore.similarity_search(query)
-print(docs[0].page_content)
+retriever = vectorstore.as_retriever(search_type="mmr")
+matched_docs = retriever.invoke(query)
+for i, d in enumerate(matched_docs):
+    print(f"\n## Document {i}\n")
+    print(d.page_content)
