@@ -19,7 +19,7 @@ load_dotenv(dotenv_path=dotenv_path)
 urls = list(getPagesFromSitemap("https://docs.snowflake.com/en/"))
 print("Number of pages found: ", len(urls))
 print("loading pages...")
-docs = WebBaseLoader(urls)
+docs = WebBaseLoader(urls[:2200])
 docs.requests_per_second = 5
 docs.continue_on_failure=True
 
