@@ -30,6 +30,6 @@ embeddings= OllamaEmbeddings(model="llama3")
 # Add to vectorDB
 index_name = "snowflake-docs-rag"
 
-vectorstore = PineconeVectorStore.from_documents(docs, embeddings, index_name=index_name)
+vectorstore = PineconeVectorStore.from_documents(doc_splits, embeddings, index_name=index_name)
 retriever = vectorstore.as_retriever()
 print(retriever)
