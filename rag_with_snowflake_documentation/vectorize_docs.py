@@ -7,7 +7,7 @@ from website_pages_retreiver import getPagesFromSitemap
 urls = list(getPagesFromSitemap("https://docs.snowflake.com/en/"))
 print("Number of pages found: ", len(urls))
 print("loading pages...")
-docs = [WebBaseLoader(url).load() for url in urls[:10]]
+docs = [WebBaseLoader(url).load() for url in urls[:1]]
 docs_list = [item for sublist in docs for item in sublist]
 
 text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
@@ -19,7 +19,7 @@ print("Number of document splits: ", len(doc_splits))
 # Add to vectorDB
 vectorstore = Chroma.from_documents(
     documents=doc_splits,
-    collection_name="rag-chroma",
+    collection_name="snowflake-docs-rag",
     embedding=OllamaEmbeddings(model="llama3"),
 )
 retriever = vectorstore.as_retriever()
