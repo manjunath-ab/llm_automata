@@ -1,12 +1,14 @@
 from langchain_community.document_loaders import WebBaseLoader
-#from langchain_community.vectorstores import Chroma
 from langchain_pinecone import PineconeVectorStore
 from langchain_community.embeddings import OllamaEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from website_pages_retreiver import getPagesFromSitemap
-import os
 from pathlib import Path
 from dotenv import load_dotenv
+import nest_asyncio
+
+
+nest_asyncio.apply()
 
 
 dotenv_path = Path('/home/.env')
@@ -16,8 +18,10 @@ load_dotenv(dotenv_path=dotenv_path)
 urls = list(getPagesFromSitemap("https://docs.snowflake.com/en/"))
 print("Number of pages found: ", len(urls))
 print("loading pages...")
-docs = [WebBaseLoader(url).load() for url in urls[:1]]
-docs_list = [item for sublist in docs for item in sublist]
+docs = WebBaseLoader(urls)
+docs.requests_per_second = 5
+
+docs_list =  docs.aload()
 
 text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
     chunk_size=100, chunk_overlap=50
