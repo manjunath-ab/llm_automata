@@ -20,7 +20,7 @@ load_dotenv(dotenv_path=dotenv_path)
 urls = list(getPagesFromSitemap("https://docs.snowflake.com/en/"))
 print("Number of pages found: ", len(urls))
 print("loading pages...")
-docs = WebBaseLoader(urls[:1])
+docs = WebBaseLoader(urls[:200])
 docs.requests_per_second = 5
 docs.continue_on_failure=True
 
@@ -33,26 +33,17 @@ embeddings= OllamaEmbeddings(model="nomic-embed-text")
 
 batch_size = 10
 num_docs = len(docs_list)
-
 text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
     chunk_size=1000, chunk_overlap=50
   )
-doc_splits = text_splitter(docs_list)
 
 
-  # Add batch to vector store (simulated)
-vectorstore = PineconeVectorStore.from_documents(doc_splits, embeddings, index_name="snowflake-docs-rag")
-print(" Vectorized all documents (in batches)")
-"""
 for i in range(0, num_docs, batch_size):
   # Split documents into batches
   batch_docs = docs_list[i:i+batch_size]
-  text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
-    chunk_size=1000, chunk_overlap=50
-  )
 
   # Create document splits
-  doc_splits = text_splitter(batch_docs)
+  doc_splits = text_splitter.split_documents(batch_docs)
 
 
   # Add batch to vector store (simulated)
@@ -62,5 +53,3 @@ for i in range(0, num_docs, batch_size):
   print(f"Processed documents {i+1} to {min(i+batch_size, num_docs)}")
 
 print("Vectorized all documents (in batches)")
-
-"""
