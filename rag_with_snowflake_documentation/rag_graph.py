@@ -46,7 +46,8 @@ def main():
     docs = retriever.invoke(question)
     print("Retrieved documents: ", len(docs))
     doc_txt = docs[1].page_content
-    print(grader.invoke({"question": question, "document": doc_txt}))
+    for item in grader.stream({"question": question, "document": doc_txt}):
+        print(item)
 
 if __name__ == "__main__":
     main()
