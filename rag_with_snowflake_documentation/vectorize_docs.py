@@ -9,7 +9,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 
-dotenv_path = Path('~/home/.env')
+dotenv_path = Path('/home/.env')
 load_dotenv(dotenv_path=dotenv_path)
 
 
