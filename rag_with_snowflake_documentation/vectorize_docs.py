@@ -28,14 +28,25 @@ docs_list =  docs.aload()
 text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
     chunk_size=1000, chunk_overlap=50
 )
-doc_splits = text_splitter.split_documents(docs_list)
-print("Number of document splits: ", len(doc_splits))
+
 
 embeddings= OllamaEmbeddings(model="nomic-embed-text")
 
-# Add to vectorDB
-index_name = "snowflake-docs-rag"
+batch_size = 10
+num_docs = len(docs_list)
 
-vectorstore = PineconeVectorStore.from_documents(doc_splits, embeddings, index_name=index_name)
+for i in range(0, num_docs, batch_size):
+  # Split documents into batches
+  batch_docs = docs_list[i:i+batch_size]
 
-print("Vectorized all the pages")
+  # Create document splits
+  doc_splits = text_splitter(batch_docs)
+
+
+  # Add batch to vector store (simulated)
+  vectorstore = PineconeVectorStore.from_documents(doc_splits, embeddings, index_name="snowflake-docs-rag")
+
+  # Print progress after each batch
+  print(f"Processed documents {i+1} to {min(i+batch_size, num_docs)}")
+
+print("Vectorized all documents (in batches)")
