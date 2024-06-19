@@ -44,6 +44,7 @@ def main():
     grader = retrieval_grader()
     question = "Explain Snowflake Architecture"
     docs = retriever.invoke(question)
+    print("Retrieved documents: ", len(docs))
     doc_txt = docs[1].page_content
     print(grader.invoke({"question": question, "document": doc_txt}))
 
