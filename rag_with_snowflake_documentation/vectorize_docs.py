@@ -1,4 +1,5 @@
 # cat vectorize_docs.py
+# cat vectorize_docs.py
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_pinecone import PineconeVectorStore
 from langchain_community.embeddings import OllamaEmbeddings
@@ -19,15 +20,13 @@ load_dotenv(dotenv_path=dotenv_path)
 urls = list(getPagesFromSitemap("https://docs.snowflake.com/en/"))
 print("Number of pages found: ", len(urls))
 print("loading pages...")
-docs = WebBaseLoader(urls[:2200])
+docs = WebBaseLoader(urls[:200])
 docs.requests_per_second = 5
 docs.continue_on_failure=True
 
 docs_list =  docs.aload()
 
-text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
-    chunk_size=1000, chunk_overlap=50
-)
+
 
 
 embeddings= OllamaEmbeddings(model="nomic-embed-text")
@@ -38,6 +37,9 @@ num_docs = len(docs_list)
 for i in range(0, num_docs, batch_size):
   # Split documents into batches
   batch_docs = docs_list[i:i+batch_size]
+  text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
+    chunk_size=1000, chunk_overlap=50
+  )
 
   # Create document splits
   doc_splits = text_splitter(batch_docs)
