@@ -1,0 +1,12 @@
+#requirements
+
+ultimate-sitemap-parser
+langchain-community
+tiktoken
+langchain-openai
+langchainhub
+chromadb
+langchain
+langgraph
+langchain-text-splitters
+
