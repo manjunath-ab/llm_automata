@@ -41,11 +41,11 @@ def main():
     vectorstore=fetch_vectorstore()
     retriever = vectorstore.as_retriever()
     #retrieval grader:
-    retrieval_grader = retrieval_grader()
+    grader = retrieval_grader()
     question = "Explain Snowflake Architecture"
     docs = retriever.get_relevant_documents(question)
     doc_txt = docs[1].page_content
-    print(retrieval_grader.invoke({"question": question, "document": doc_txt}))
+    print(grader.invoke({"question": question, "document": doc_txt}))
 
 if __name__ == "__main__":
     main()
