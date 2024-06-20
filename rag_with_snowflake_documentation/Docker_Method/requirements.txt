@@ -10,3 +10,4 @@ langgraph
 langchain-text-splitters
 langchain-pinecone
 bs4
+python-dotenv
