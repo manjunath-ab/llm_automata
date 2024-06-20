@@ -22,7 +22,7 @@ print("Number of pages found: ", len(urls))
 print("loading pages...")
 
 embeddings= OllamaEmbeddings(model="nomic-embed-text")
-total_docs=2200
+total_docs=len(urls)
 
 
 
