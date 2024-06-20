@@ -46,3 +46,4 @@ PINECONE_API_KEY=your_pinecone_api_key_here
 ```bash
 python3 vectorize.py
 ```
+now the pinecone vectors are created
