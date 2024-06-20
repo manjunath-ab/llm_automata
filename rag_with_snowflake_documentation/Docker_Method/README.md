@@ -39,3 +39,10 @@ Create a .env file in the project root and store your Pinecone API key as an env
 ```BASH
 PINECONE_API_KEY=your_pinecone_api_key_here
 ```
+
+## Execution
+
+1. Run
+```bash
+python3 vectorize.py
+```
