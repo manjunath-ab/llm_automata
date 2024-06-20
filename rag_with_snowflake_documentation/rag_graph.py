@@ -5,9 +5,13 @@ from langchain_community.embeddings import OllamaEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain_community.chat_models import ChatOllama
 from langchain_core.output_parsers import JsonOutputParser
+from langchain_core.output_parsers import StrOutputParser
+from langchain import hub
+
+
 
 def load_env():
-    dotenv_path = Path('/home/.env')
+    dotenv_path = Path('../.env')
     load_dotenv(dotenv_path=dotenv_path)
 
 def fetch_vectorstore():
@@ -32,8 +36,17 @@ def retrieval_grader():
     retrieval_grader = prompt | llm | JsonOutputParser()
 
     return retrieval_grader
+def rag_generator():
+    prompt = hub.pull("rlm/rag-prompt")
+    llm = ChatOllama(model="llama3", temperature=0)
+    rag_chain = prompt | llm | StrOutputParser()
+    return rag_chain
 
+  
 
+def format_docs(docs):
+
+    return "\n\n".join(doc.page_content for doc in docs)
 
 
 def main():
@@ -45,9 +58,13 @@ def main():
     question = "Explain Snowflake Architecture"
     docs = retriever.invoke(question)
     print("Retrieved documents: ", len(docs))
-    doc_txt = docs[1].page_content
-    for item in grader.stream({"question": question, "document": doc_txt}):
-        print(item)
+    #doc_txt = docs[1].page_content
+    #print(grader.invoke({"question": question, "document": doc_txt}))
+    formatted_docs = format_docs(docs)
+    rag=rag_generator()
+    generation = rag.invoke({"context": formatted_docs, "question": question})
+    print(generation)
+
 
 if __name__ == "__main__":
     main()
