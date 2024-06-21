@@ -24,11 +24,6 @@ print("loading pages...")
 embeddings= OllamaEmbeddings(model="nomic-embed-text")
 total_docs=len(urls)
 
-
-
-
-
-
 batch_size = 10
 
 print(f"Total number of batches is: {total_docs/batch_size}")
