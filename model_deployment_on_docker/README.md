@@ -63,4 +63,8 @@ This will open an interface for you to interact with the model through dialogue.
 ###Step 2: Making API Calls
 You can also make API calls to the models using the curl commandas showm in this demo below
 
+Running Local LLM models on docker 🦙 - Watch Video
+
+>
+
 https://www.loom.com/share/19a628142168414c8d463c102d240a31?sid=37efbc43-082f-461a-8149-c8ebe595f03d
