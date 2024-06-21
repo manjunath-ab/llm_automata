@@ -2,8 +2,6 @@
 
 LLM Automata is a collection of projects showcasing various features and capabilities of Large Language Models (LLMs). The repository is organized into several folders, each containing distinct projects with unique functionalities.
 
-### Folders Overview
-
 ## CHATBOT
 The `CHATBOT` folder contains a simple chatbot built using Mistral as the LLM base. This chatbot leverages Groq for high-speed inference and Streamlit for front-end interaction. It serves as an example of integrating these technologies to create an efficient and responsive conversational agent.
 
@@ -29,11 +27,11 @@ The project will implement some of these ideas from scratch using LangGraph. Ini
 
 The repository also includes a fully automated planning agent. The core idea behind this agent is to develop a multi-step plan and execute it one step at a time. After completing a particular task, the agent revisits the plan and modifies it as appropriate. This approach contrasts with a typical ReAct style agent that thinks one step at a time.
 
-# Advantages of the Plan-and-Execute Style Agent:
+Advantages of the Plan-and-Execute Style Agent:
 - **Explicit Long-term Planning:** Even strong LLMs can struggle with long-term planning, but this approach facilitates it effectively.
 - **Optimized Model Usage:** The agent can use smaller/weaker models for the execution steps, reserving larger/better models for the planning steps.
 
-### Getting Started
+## Getting Started
 To get started with any of the projects in this repository, follow the instructions provided in the respective folders. Each folder contains a detailed README with setup instructions, dependencies, and usage guidelines.
 
 
