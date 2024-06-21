@@ -69,6 +69,65 @@ The script runs the `main` function if executed as the main module.
 
 After starting the Streamlit app, you can interact with Marco by typing your data engineering problem into the input box and clicking the "Send Message" button. Marco will respond by asking clarifying questions and providing a step-by-step solution.
 
+## Usefulness of Responses
+
+The Data Engineering Expert Chatbot, Marco, is designed to provide highly useful and context-specific responses to data engineering problems. The key aspects that make the responses valuable for the user base include:
+
+### Expert Guidance
+Marco simulates a conversation with a seasoned data engineering expert, offering solutions that are practical and aligned with industry best practices.
+
+### Interactive Problem-Solving
+The chatbot engages users in a dialogue, asking clarifying questions to fully understand the problem before suggesting solutions. This ensures that responses are tailored to the user's specific context and needs.
+
+### Step-by-Step Solutions
+Marco provides detailed, step-by-step instructions to address the problem, making it easier for users to follow and implement the solutions effectively.
+
+### Real-Time Feedback
+Users receive immediate feedback and solutions to their queries, which is crucial for time-sensitive data engineering tasks.
+
+### Continuous Improvement
+The chatbot leverages session histories to maintain context across interactions, allowing for more coherent and informed responses over time.
+
+These features ensure that users receive high-quality, actionable advice that can significantly aid in resolving complex data engineering issues efficiently.
+
+## Variety of Queries Handled
+
+The Data Engineering Expert Chatbot is capable of addressing a wide range of queries related to data engineering. Here are some examples of the types of queries the application handles:
+
+### Data Pipeline Design
+- How to design and implement a scalable ETL pipeline?
+- Best practices for data ingestion from multiple sources.
+
+### Database Management
+- How to optimize database performance?
+- Strategies for data partitioning and indexing.
+
+### Data Warehousing
+- How to design a data warehouse for a large e-commerce platform?
+- Tips for integrating real-time data streams into a data warehouse.
+
+### Big Data Technologies
+- Differences between Hadoop and Spark and when to use each.
+- How to implement data processing using Apache Kafka?
+
+### Data Quality and Governance
+- Techniques for ensuring data quality in data lakes.
+- Best practices for data governance and compliance.
+
+### Data Modeling
+- How to create an efficient data model for an IoT application?
+- Normalization vs. denormalization in database design.
+
+### Cloud Data Engineering
+- How to migrate on-premises data infrastructure to AWS?
+- Using Google BigQuery for large-scale data analytics.
+
+### Data Security
+- Methods for securing sensitive data in transit and at rest.
+- Implementing role-based access control in a data platform.
+
+By addressing such a diverse array of topics, the chatbot caters to a broad audience, from novice data engineers to experienced professionals seeking advanced solutions. This versatility makes it an invaluable tool for anyone involved in data engineering.
+
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
