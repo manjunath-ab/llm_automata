@@ -1,7 +1,7 @@
-# Snowflake Sensei
+# LLMA3 Automata
 
 
-Snowflake Sensei is a local large language model (LLM) chatbot that specializes in providing solutions based on Snowflake documentation. The goal is to create a conversational AI assistant that can answer questions and offer guidance on Snowflake-related topics . The main task will be for it run sql queries in the backend and generate views for the 'NON SQL' folk.
+LLMA3 Automata has many features categorized by the folders.It is a local large language model (LLM) chatbot that specializes in providing solutions based on Snowflake documentation. The goal is to create a conversational AI assistant that can answer questions and offer guidance on Snowflake-related topics .
 
 
 I have built Corrective RAG Chat within the RAG with snowflake folder that follows this architecture:
