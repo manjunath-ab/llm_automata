@@ -1,29 +1,38 @@
 # LLM Automata
 
+LLM Automata is a collection of projects showcasing various features and capabilities of Large Language Models (LLMs). The repository is organized into several folders, each containing distinct projects with unique functionalities.
 
-LLM Automata has many features categorized by the folders.It is a local large language model (LLM) chatbot that specializes in providing solutions based on Snowflake documentation. The goal is to create a conversational AI assistant that can answer questions and offer guidance on Snowflake-related topics .
+## Folders Overview
 
+### CHATBOT
+The `CHATBOT` folder contains a simple chatbot built using Mistral as the LLM base. This chatbot leverages Groq for high-speed inference and Streamlit for front-end interaction. It serves as an example of integrating these technologies to create an efficient and responsive conversational agent.
 
-I have built Corrective RAG Chat within the RAG with snowflake folder that follows this architecture:
-![image](https://github.com/manjunath-ab/snowflake_sensei/assets/114261603/48124772-8300-41f3-a71d-d65eca768ee4)
+### RAG_WITH_SNOWFLAKE_DOCUMENTATION
+The `RAG_WITH_SNOWFLAKE_DOCUMENTATION` folder houses a local LLM chatbot designed to provide solutions based on Snowflake documentation. The goal is to create a conversational AI assistant that can answer questions and offer guidance on Snowflake-related topics.
 
-Corrective-RAG (CRAG) is a strategy for RAG that incorporates self-reflection / self-grading on retrieved documents.
+### Corrective RAG Chat
+Within the `RAG_WITH_SNOWFLAKE_DOCUMENTATION` folder, there is a sub-project called Corrective RAG Chat, which follows an advanced architecture. 
 
-In the paper here, a few steps are taken:
+![Corrective RAG Architecture](path/to/image)
 
-If at least one document exceeds the threshold for relevance, then it proceeds to generation
-Before generation, it performns knowledge refinement
-This partitions the document into "knowledge strips"
-It grades each strip, and filters our irrelevant ones
-If all documents fall below the relevance threshold or if the grader is unsure, then the framework seeks an additional datasource
-It will use web search to supplement retrieval
-We will implement some of these ideas from scratch using LangGraph:
+#### Corrective-RAG (CRAG)
+Corrective-RAG (CRAG) is a Retrieval-Augmented Generation (RAG) strategy that incorporates self-reflection and self-grading on retrieved documents. The approach is outlined in the following steps:
 
-Let's skip the knowledge refinement phase as a first pass. This can be added back as a node, if desired.
-If any documents are irrelevant, let's opt to supplement retrieval with web search.
-We'll use Tavily Search for web search.
-Let's use query re-writing to optimize the query for web search.
+1. **Document Relevance Check:** If at least one document exceeds the relevance threshold, the process proceeds to the generation phase.
+2. **Knowledge Refinement:** Before generation, the documents are partitioned into "knowledge strips," which are then graded, and irrelevant ones are filtered out.
+3. **Supplemental Retrieval:** If all documents fall below the relevance threshold or if the grader is unsure, the framework seeks additional data sources. It uses web search, specifically Tavily Search, to supplement retrieval.
+4. **Query Re-writing:** Queries are optimized for web search using query re-writing techniques.
 
+The project will implement some of these ideas from scratch using LangGraph. Initially, the knowledge refinement phase will be skipped, but it can be added later as a node if desired. If any documents are deemed irrelevant, supplemental retrieval will be triggered with web search.
 
-In the other flow : [Undecided]
+### Fully Automated Planning Agent
+The repository also includes a fully automated planning agent. The core idea behind this agent is to develop a multi-step plan and execute it one step at a time. After completing a particular task, the agent revisits the plan and modifies it as appropriate. This approach contrasts with a typical ReAct style agent that thinks one step at a time.
+
+#### Advantages of the Plan-and-Execute Style Agent:
+- **Explicit Long-term Planning:** Even strong LLMs can struggle with long-term planning, but this approach facilitates it effectively.
+- **Optimized Model Usage:** The agent can use smaller/weaker models for the execution steps, reserving larger/better models for the planning steps.
+
+## Getting Started
+To get started with any of the projects in this repository, follow the instructions provided in the respective folders. Each folder contains a detailed README with setup instructions, dependencies, and usage guidelines.
+
 
