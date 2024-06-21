@@ -1,0 +1,7 @@
+#requirments to run chatbot applications here:
+
+langchain-groq
+langchain
+langchain_community
+streamlit
+python-dotenv
