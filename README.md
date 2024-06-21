@@ -25,6 +25,5 @@ We'll use Tavily Search for web search.
 Let's use query re-writing to optimize the query for web search.
 
 
-In the other flow which is a snowflake grpah agent , the goal is to built a decision tree using langraph which can be used to run SQL Queris for NON SQL folk and generate reports using an LLM fine tuned with Snowflake SQL Syntax.
-
+In the other flow : [Undecided]
 
