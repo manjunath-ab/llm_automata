@@ -1,6 +1,15 @@
 ```markdown
 # Data Engineering Expert Chatbot
 
+<div>
+    <a href="https://www.loom.com/share/c51e7374330b48b4b785c2a3aaaa424e">
+      <p>Data Engineering Chatbot using Mistral  - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/c51e7374330b48b4b785c2a3aaaa424e">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/c51e7374330b48b4b785c2a3aaaa424e-with-play.gif">
+    </a>
+  </div>
+
 This project is a Streamlit application that simulates a chat with a Data Engineering expert named Marco. Marco can assist with data engineering problems by asking clarifying questions and providing step-by-step solutions.
 
 ## Installation
