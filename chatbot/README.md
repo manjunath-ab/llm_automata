@@ -31,7 +31,7 @@ streamlit run mistral_chat_groq.py
 The script imports several libraries and modules required for the application
 ### Loading Environment Variables
 
-The environment variables are loaded from a `.env` file located at `/home/abhi/.env` using the `load_dotenv` function.Make sure to change the path while running it
+Make a Groq API Key and store it in the environment variables loaded from a `.env` file located at `/home/abhi/.env` using the `load_dotenv` function.Make sure to change the path while running it
 
 ### Model Initialization
 
