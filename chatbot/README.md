@@ -137,6 +137,17 @@ The Data Engineering Expert Chatbot is capable of addressing a wide range of que
 
 By addressing such a diverse array of topics, the chatbot caters to a broad audience, from novice data engineers to experienced professionals seeking advanced solutions. This versatility makes it an invaluable tool for anyone involved in data engineering.
 
+### Evaluation and Testing
+
+<div>
+    <a href="https://www.loom.com/share/2940f23b67254391b0f508cf509fe38b">
+      <p>Demo of flipped interaction pattern with a chatbot - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/2940f23b67254391b0f508cf509fe38b">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/2940f23b67254391b0f508cf509fe38b-with-play.gif">
+    </a>
+  </div>
+
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
