@@ -6,8 +6,6 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.messages import HumanMessage
 from pathlib import Path
 from dotenv import load_dotenv
-from langchain_groq import ChatGroq
-import os
 from langchain_pinecone import PineconeVectorStore
 from langchain_community.embeddings import OllamaEmbeddings
 from langchain.prompts import PromptTemplate
@@ -18,7 +16,7 @@ from langchain import hub
 from langchain.schema import Document
 from langchain_community.tools.tavily_search import TavilySearchResults
 
-dotenv_path = Path('/home/abhi/.env')
+dotenv_path = Path('/home/jovyan/workspace/.env')
 load_dotenv(dotenv_path=dotenv_path)
 
 
