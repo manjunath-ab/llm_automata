@@ -59,8 +59,15 @@ We will implement this using LangGraph, following these steps:
 
 A demo of the project can be seen below.
 
-[[Include a link or embed the demo video here]](https://www.loom.com/share/ae82c5dc67d847c0870c3c52e06842d0?sid=6389af0e-f80c-4963-b020-7c3487754172)
-
+[[RAG with snowflake docs]](https://www.loom.com/share/ae82c5dc67d847c0870c3c52e06842d0?sid=6389af0e-f80c-4963-b020-7c3487754172)
+<div>
+    <a href="https://www.loom.com/share/ae82c5dc67d847c0870c3c52e06842d0">
+      <p>RAG with Snowflake Documentation - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/ae82c5dc67d847c0870c3c52e06842d0">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/ae82c5dc67d847c0870c3c52e06842d0-with-play.gif">
+    </a>
+  </div>
 ### Notes
 
 - Ensure you have a GPU available for the runtime to avoid slow processing times.
