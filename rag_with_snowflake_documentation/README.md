@@ -59,7 +59,7 @@ We will implement this using LangGraph, following these steps:
 
 A demo of the project can be seen below.
 
-[Include a link or embed the demo video here]
+[[Include a link or embed the demo video here]](https://www.loom.com/share/ae82c5dc67d847c0870c3c52e06842d0?sid=6389af0e-f80c-4963-b020-7c3487754172)
 
 ### Notes
 
