@@ -1,4 +1,24 @@
 ![image](https://github.com/manjunath-ab/snowflake_sensei/assets/114261603/9a0c0f5f-cdcd-49d0-bd25-5e0f8d5b6dfc)
+
+### Uploading Snowflake Docs to Pinecone Vector Database
+
+To enhance the retrieval capabilities and ensure a robust dataset, we will upload Snowflake documents to our Pinecone vector database. This will enable efficient and accurate vector searches.
+
+#### Steps to Upload Documents
+
+1. **Install Necessary Libraries**:
+   - Ensure you have the necessary libraries installed
+
+2. **Set Up Pinecone**:
+   - Sign up for a Pinecone account if you don't have one.
+   - Create an index in your Pinecone dashboard.
+
+3. **Vectorize and Upload Documents**:
+   - Replace the placeholder Pinecone API key in your script with your actual Pinecone API key.
+   - Run the script provided to vectorize your documents and upload them to Pinecone.
+
+NOTE: Make sure to replace the pinecone and tavily api keys.
+
 ## Corrective-RAG (CRAG) Strategy
 
 CRAG is an advanced strategy for Retrieval-Augmented Generation (RAG) that enhances the retrieval process by incorporating self-reflection and self-grading on the retrieved documents. The goal is to ensure high relevance and accuracy of the documents used for generation. The process follows these steps:
