@@ -2,6 +2,14 @@
 
 ### Uploading Snowflake Docs to Pinecone Vector Database
 
+<div>
+    <a href="https://www.loom.com/share/91d8ccc0ed464bab9902e906e137fd6b">
+      <p>taking a look at our pinecone vector DB - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/91d8ccc0ed464bab9902e906e137fd6b">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/91d8ccc0ed464bab9902e906e137fd6b-with-play.gif">
+    </a>
+  </div>
 To enhance the retrieval capabilities and ensure a robust dataset, we will upload Snowflake documents to our Pinecone vector database. This will enable efficient and accurate vector searches.
 
 #### Steps to Upload Documents
