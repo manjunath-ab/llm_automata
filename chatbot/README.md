@@ -1,3 +1,12 @@
+<div>
+    <a href="https://www.loom.com/share/c51e7374330b48b4b785c2a3aaaa424e">
+      <p>Data Engineering Chatbot using Mistral  - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/c51e7374330b48b4b785c2a3aaaa424e">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/c51e7374330b48b4b785c2a3aaaa424e-with-play.gif">
+    </a>
+  </div>
+  
 ```markdown
 # Data Engineering Expert Chatbot
 
@@ -31,7 +40,7 @@ streamlit run mistral_chat_groq.py
 The script imports several libraries and modules required for the application
 ### Loading Environment Variables
 
-The environment variables are loaded from a `.env` file located at `/home/abhi/.env` using the `load_dotenv` function.Make sure to change the path while running it
+Make a Groq API Key and store it in the environment variables loaded from a `.env` file located at `/home/abhi/.env` using the `load_dotenv` function.Make sure to change the path while running it
 
 ### Model Initialization
 
@@ -127,6 +136,17 @@ The Data Engineering Expert Chatbot is capable of addressing a wide range of que
 - Implementing role-based access control in a data platform.
 
 By addressing such a diverse array of topics, the chatbot caters to a broad audience, from novice data engineers to experienced professionals seeking advanced solutions. This versatility makes it an invaluable tool for anyone involved in data engineering.
+
+### Evaluation and Testing
+
+<div>
+    <a href="https://www.loom.com/share/2940f23b67254391b0f508cf509fe38b">
+      <p>Demo of flipped interaction pattern with a chatbot - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/2940f23b67254391b0f508cf509fe38b">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/2940f23b67254391b0f508cf509fe38b-with-play.gif">
+    </a>
+  </div>
 
 ## License
 
