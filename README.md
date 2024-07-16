@@ -21,9 +21,12 @@ Corrective-RAG (CRAG) is a Retrieval-Augmented Generation (RAG) strategy that in
 
 The project will implement some of these ideas from scratch using LangGraph. Initially, the knowledge refinement phase will be skipped, but it can be added later as a node if desired. If any documents are deemed irrelevant, supplemental retrieval will be triggered with web search.
 
-## Fully Automated Planning Agent
+## SnowPlan , a Fully Automated Planning Agent
 
 ![image](https://github.com/manjunath-ab/llm_automata/assets/114261603/f9aea09c-b107-4bd7-837b-d019a8feb5ed)
+
+
+
 
 The repository also includes a fully automated planning agent. The core idea behind this agent is to develop a multi-step plan and execute it one step at a time. After completing a particular task, the agent revisits the plan and modifies it as appropriate. This approach contrasts with a typical ReAct style agent that thinks one step at a time.
 
