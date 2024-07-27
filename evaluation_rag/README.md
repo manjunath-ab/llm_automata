@@ -1,5 +1,14 @@
 # RAG Chatbot Evaluation using DeepEval
 
+<div>
+    <a href="https://www.loom.com/share/13738432d7af42e98156c0f06c537323">
+      <p>RAG Evaluation using deepeval - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/13738432d7af42e98156c0f06c537323">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/13738432d7af42e98156c0f06c537323-4e508ab64da9b912-full-play.gif">
+    </a>
+  </div>
+
 This project aims to evaluate a Retrieval-Augmented Generation (RAG) chatbot using DeepEval, focusing specifically on the Answer Relevancy metric. The Answer Relevancy metric measures the quality of your RAG pipeline's generator by evaluating how relevant the actual output of your LLM application is compared to the provided input.
 I have generated a excel document by testing the rag chatbot.
 
