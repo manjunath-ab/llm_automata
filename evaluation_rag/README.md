@@ -8,7 +8,8 @@ I have generated a excel document by testing the rag chatbot.
 
 The Answer Relevancy metric is a self-explaining LLM-Eval, meaning it outputs a reason for its metric score. The score is calculated according to the following equation:
 
-\[ \text{Answer Relevancy} = \frac{\text{Number of Relevant Statements}}{\text{Total Number of Statements}} \]
+![image](https://github.com/user-attachments/assets/1a938170-085a-4c1a-b65e-1e7ea1388508)
+
 
 Where:
 - **Number of Relevant Statements**: The count of statements in the chatbot's response that are considered relevant to the input question.
@@ -18,7 +19,8 @@ Where:
 
 The faithfulness metric measures the quality of your RAG pipeline's generator by evaluating whether the actual output factually aligns with the contents of your retrieval context. DeepEval's faithfulness metric is a self-explaining LLM-Eval, meaning it outputs a reason for its metric score. The FaithfulnessMetric score is calculated according to the following equation:
 
-\[ \text{Faithfulness} = \frac{\text{Number of Truthful Claims}}{\text{Total Number of Claims}} \]
+![image](https://github.com/user-attachments/assets/06609eb6-da04-4e7b-bd3b-633f59319fd5)
+
 
 Where:
 - **Number of Truthful Claims**: The count of claims in the chatbot's response that are factually correct.
