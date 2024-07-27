@@ -2,6 +2,13 @@
 
 This project aims to evaluate a Retrieval-Augmented Generation (RAG) chatbot using DeepEval, focusing specifically on the Answer Relevancy metric. The Answer Relevancy metric measures the quality of your RAG pipeline's generator by evaluating how relevant the actual output of your LLM application is compared to the provided input.
 I have generated a excel document by testing the rag chatbot.
+
+
+![image](https://github.com/user-attachments/assets/d97b1c3c-df83-4110-bbdd-215bce493dc9)
+
+we are using gpt4o-mini to perform the evaluation for us so make sure to have the OPENAI_API_KEY in your .env file before implementing this.
+
+
 ## Metrics
 
 ### Answer Relevancy
