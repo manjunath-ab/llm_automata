@@ -3,6 +3,13 @@
 
 This repository provides a step-by-step guide to fine-tuning the LLAMA3.1 model using the Unsloth library. The dataset for fine-tuning is generated with `dataset_gen_for_fine_tuning.ipynb` and contains 1000 document splits. The fine-tuned model will be uploaded to Hugging Face Hub.
 
+Here is the link to the fine trained model:https://huggingface.co/abhi1006/snowflake_lora_model
+
+
+
+![image](https://github.com/user-attachments/assets/500b29ed-d0ff-4f2a-be88-c5d52c08a575)
+
+
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
