@@ -10,7 +10,7 @@ This repository provides a step-by-step guide to fine-tuning the LLAMA3.1 model 
 - [Uploading the Dataset to Hugging Face](#uploading-the-dataset-to-hugging-face)
 - [Fine-Tuning the Model](#fine-tuning-the-model)
 - [Uploading the Fine-Tuned Model](#uploading-the-fine-tuned-model)
-- [License](#license)
+
 
 ## Prerequisites
 
@@ -44,7 +44,3 @@ Before starting, ensure you have the following installed:
 1. Once fine-tuning is complete, save the model locally.
 2. Use your Hugging Face access token to authenticate and upload the model to your Hugging Face Hub.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-```
