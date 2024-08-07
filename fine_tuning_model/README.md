@@ -1,4 +1,4 @@
-```markdown
+
 # Finetuning the LLAMA3.1 Model using Unsloth
 
 This repository provides a step-by-step guide to fine-tuning the LLAMA3.1 model using the Unsloth library. The dataset for fine-tuning is generated with `dataset_gen_for_fine_tuning.ipynb` and contains 1000 document splits. The fine-tuned model will be uploaded to Hugging Face Hub.
