@@ -9,6 +9,7 @@ The core idea behind SnowPlan is to create a detailed multi-step plan and execut
 ## Architecture
 
 ![image](https://github.com/user-attachments/assets/ea355e83-2d1d-4c95-8f5a-e02b86450c4f)
+![image](https://github.com/user-attachments/assets/4240812c-f4ea-4fde-9e24-47e287ff6bdb)
 
 
 
