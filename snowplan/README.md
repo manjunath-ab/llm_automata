@@ -8,7 +8,10 @@ The core idea behind SnowPlan is to create a detailed multi-step plan and execut
 
 ## Architecture
 
-<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVKphP8PA=/?moveToViewport=-654,-738,1696,930&embedId=999000586479" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+![image](https://github.com/user-attachments/assets/ea355e83-2d1d-4c95-8f5a-e02b86450c4f)
+
+
+
 
 
 ### Advantages of the Plan-and-Execute Style Agent
