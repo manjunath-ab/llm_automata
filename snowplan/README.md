@@ -60,7 +60,7 @@ To enhance the retrieval capabilities and ensure a robust dataset, we will uploa
    Clone this repository to your local machine using:
 
    ```bash
-   git clone https://github.com/yourusername/snowplan.git
+   git clone https://github.com/manjunath-ab/llm_automata.git
    cd snowplan
    ```
 
