@@ -1,6 +1,9 @@
 # SnowPlan: A Fully Automated Planning Agent
 
-<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/cd8810c758d24323b642712b68831024?sid=26bdeb28-b616-4162-adbf-1d5ae66c8797" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+[![Loom Video](https://www.loom.com/embed/cd8810c758d24323b642712b68831024?sid=26bdeb28-b616-4162-adbf-1d5ae66c8797)](https://www.loom.com/embed/cd8810c758d24323b642712b68831024?sid=26bdeb28-b616-4162-adbf-1d5ae66c8797)
+
+Click the image above to watch the video.
+
 
 Welcome to **SnowPlan**, a fully automated planning agent designed to tackle complex tasks by developing and executing a multi-step plan. This agent is built to be both flexible and efficient, adjusting its plan as needed after each step, unlike traditional ReAct-style agents that think one step at a time.
 
