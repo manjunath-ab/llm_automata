@@ -1,6 +1,13 @@
 # SnowPlan: A Fully Automated Planning Agent
 
-SnowPlan Demo - Watch Video
+<div>
+    <a href="https://www.loom.com/share/cd8810c758d24323b642712b68831024">
+      <p>SnowPlan Demo  - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/cd8810c758d24323b642712b68831024">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/cd8810c758d24323b642712b68831024-9483b8dd9f56ed42-full-play.gif">
+    </a>
+  </div>
 
 [![Loom Video](https://www.loom.com/embed/cd8810c758d24323b642712b68831024?sid=26bdeb28-b616-4162-adbf-1d5ae66c8797)](https://www.loom.com/embed/cd8810c758d24323b642712b68831024?sid=26bdeb28-b616-4162-adbf-1d5ae66c8797)
 
