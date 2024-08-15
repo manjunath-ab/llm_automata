@@ -37,7 +37,7 @@ The result of the final step should be the final answer. Make sure that each ste
     ]
 )
  planner = planner_prompt | ChatOpenAI(
-    model="gpt-3.5-turbo", temperature=0
+    model="gpt-4o-mini", temperature=0
 ).with_structured_output(Plan)
 
  return planner
@@ -48,7 +48,7 @@ def create_agent_executor():
     prompt.pretty_print()
 
 # Choose the LLM that will drive the agent
-    llm = ChatOpenAI(model="gpt-3.5-turbo")
+    llm = ChatOpenAI(model="gpt-4o-mini")
     agent_executor = create_react_agent(llm, tools, messages_modifier=prompt)
     return agent_executor
 
@@ -74,6 +74,6 @@ def create_replanner():
 
 
  replanner = replanner_prompt | ChatOpenAI(
-    model="gpt-3.5-turbo", temperature=0
+    model="gpt-4o-mini", temperature=0
    ).with_structured_output(Act)
  return replanner
