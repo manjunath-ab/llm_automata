@@ -4,7 +4,14 @@
 **NUID**: 002908901  
 **Email**: [manjunath.ab@northeastern.edu](mailto:manjunath.ab@northeastern.edu)
 
-
+<div>
+    <a href="https://www.loom.com/share/2391a4b202144520b147e557ab58d18c">
+      <p>SnowPlan Demo and Fine Tuning Overview - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/2391a4b202144520b147e557ab58d18c">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/2391a4b202144520b147e557ab58d18c-b75efd1094640b00-full-play.gif">
+    </a>
+  </div>
 
 Welcome to **SnowPlan**, a fully automated planning agent designed to tackle complex tasks by developing and executing a multi-step plan. This agent is built to be both flexible and efficient, adjusting its plan as needed after each step, unlike traditional ReAct-style agents that think one step at a time.
 
