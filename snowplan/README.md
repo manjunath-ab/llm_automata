@@ -1,9 +1,9 @@
 # SnowPlan: A Fully Automated Planning Agent
 
-by:
-Abhishek Manjunath
-NUID: 002908901
-email: manjunath.ab@northeastern.edu
+**Author**: Abhishek Manjunath  
+**NUID**: 002908901  
+**Email**: [manjunath.ab@northeastern.edu](mailto:manjunath.ab@northeastern.edu)
+
 
 <div>
     <a href="https://www.loom.com/share/cd8810c758d24323b642712b68831024">
