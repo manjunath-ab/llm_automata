@@ -100,14 +100,19 @@ Once the dependencies are installed and your dataset is vectorized, you can star
 streamlit run main.py
 
 ```
-How It Works
+# How It Works
 
-Planning Phase:
+## Planning Phase
+The agent uses **Gpt4o mini** to develop a comprehensive plan. This plan outlines the steps required to achieve the desired outcome.
 
-The agent uses Gpt4o mini to develop a comprehensive plan. This plan outlines the steps required to achieve the desired outcome.
-Execution Phase:
-
+## Execution Phase
 The agent follows the plan, executing each step using the appropriate model. After completing each task, the agent revisits the plan to update it based on the new context or any changes in the environment.
-Dynamic Adjustment:
 
-Unlike traditional ReAct agents, SnowPlan continuously adapts its strategy, ensuring it remains aligned with the overall objective.
+## Dynamic Adjustment
+Unlike traditional ReAct agents, **SnowPlan** continuously adapts its strategy, ensuring it remains aligned with the overall objective.
+
+# Contact
+For more information or support, please reach out:
+
+- **Email:** [manjunath.ab@northeastern.edu](mailto:manjunath.ab@northeastern.edu)
+
